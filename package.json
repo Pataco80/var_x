@@ -1,0 +1,17 @@
+{
+  "name": "var_x",
+  "version": "1.0.0",
+  "description": "JAMStack Website Gatsby, Strapi and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "// comment": "Attention run start ne fonctionne pas pour l'instant",
+    "start_mongodb": "brew services start mongodb-community@4.4",
+    "start_strapi": "/backend && strapi develop",
+    "start_gatsby": "/frontend && gatsby develop",
+    "start": "start_mongodb && start_strapi",
+    "stop": "brew services stop mongodb-community@4.4",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
